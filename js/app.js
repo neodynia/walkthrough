@@ -14,31 +14,24 @@ class Enemy {
     }
 
     render() {
-
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-
     }
 }
 
 class Player {
 
     constructor(x,y) {
-
         this.x = x;
         this.y = y;
         this.sprite = 'images/char-boy.png';
-
     }
 
     update(dt) {
-
         this.x = this.x + this.speed * dt;
     }
 
     render() {
-
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-
     }
 
     handleInput() {
