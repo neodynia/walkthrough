@@ -1,0 +1,24 @@
+{
+  "name": "frontend-nanodegree-arcade-game",
+  "version": "1.0.0",
+  "description": "frontend project udacity",
+  "main": "app.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neodynia/frontend-nanodegree-arcade-game.git"
+  },
+  "keywords": [
+    "udacity",
+    "fend",
+    "project"
+  ],
+  "author": "ryan boris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neodynia/frontend-nanodegree-arcade-game/issues"
+  },
+  "homepage": "https://github.com/neodynia/frontend-nanodegree-arcade-game#readme"
+}
