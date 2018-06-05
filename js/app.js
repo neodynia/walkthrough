@@ -34,11 +34,9 @@ class Player {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
-    handleInput() {
-
-
-    }
-
+    //handleInput() {
+//
+  //  }
 }
 
 document.addEventListener('keyup', function(e) {

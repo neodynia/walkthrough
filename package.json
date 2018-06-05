@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/neodynia/frontend-nanodegree-arcade-game/issues"
   },
-  "homepage": "https://github.com/neodynia/frontend-nanodegree-arcade-game#readme"
+  "homepage": "https://github.com/neodynia/frontend-nanodegree-arcade-game#readme",
+  "dependencies": {
+    "jshint": "^2.9.5"
+  }
 }
