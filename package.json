@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/neodynia/frontend-nanodegree-arcade-game#readme",
   "dependencies": {
+    "gulp-print": "^5.0.0",
+    "gulp-sass": "^4.0.1",
     "jshint": "^2.9.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
   }
 }
