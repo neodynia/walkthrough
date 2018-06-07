@@ -1,14 +1,14 @@
 var rows = [83 * 1 - 20, 83 * 2 - 20, 83 * 3 - 20];
 
 class Enemy {
-  constructor (x, y, speed) {
+  constructor(x, y, speed) {
     this.x = Math.random() * -500;
     this.y = rows[Math.floor(Math.random() * rows.length)];
     this.speed = Math.random() * 400 + 100;
     this.sprite = 'images/enemy-bug.png';
   }
 
-  update (dt) {
+  update(dt) {
     if (this.x + 101 * 0.8 >= player.x && this.x <= player.x && this.y + 83 * 0.2 >= player.y && this.y - 83 * 0.2 <= player.y) {
       player.reset();
     }
@@ -21,33 +21,33 @@ class Enemy {
     }
   }
 
-  render () {
+  render() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
 }
 
 class Player {
-  constructor (x, y) {
+  constructor(x, y) {
     this.x = 101 * 2;
     this.y = 83 * 5 - 10;
     this.sprite = 'images/char-boy.png';
   }
 
-  update (dt) {
+  update(dt) {
     this.x = this.x;
     this.y = this.y;
   }
 
-  render () {
+  render() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
 
-  reset () {
+  reset() {
     this.x = 101 * 2;
     this.y = 83 * 5 - 10;
   }
 
-  handleInput (allowedKeys) {
+  handleInput(allowedKeys) {
     switch (allowedKeys) {
       case 'left':
         this.x = (this.x - 101 >= 0) ? this.x - 101 : 0;
