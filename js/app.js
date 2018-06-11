@@ -10,7 +10,7 @@ class Enemy {
 
   update(dt) {
     if (this.x + 101 * 0.8 >= player.x && this.x <= player.x && this.y + 83 * 0.2 >= player.y && this.y - 83 * 0.2 <= player.y) {
-      player.reset();
+      player.lose();
     }
 
     this.x += this.speed * dt;
@@ -42,6 +42,16 @@ class Player {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
 
+  win() {
+    alert('win');
+    this.reset();
+  }
+
+  lose() {
+    alert('OUCHIES');
+    this.reset();
+  }
+
   reset() {
     this.x = 101 * 2;
     this.y = 83 * 5 - 10;
@@ -62,7 +72,7 @@ class Player {
         if (this.y - 83 >= 60) {
           this.y -= 83;
         } else {
-          this.reset();
+          this.win();
         }
         break;
       default:
