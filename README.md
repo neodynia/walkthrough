@@ -39,5 +39,7 @@ Not applicable, considering the nature of the project.  The project was orginall
 ## Contact Author
 
 Ryan Boris
-[Email](rbwebdev@icloud.com)
-[Linkedin](https://www.linkedin.com/in/ryanboris)
+
+* [Email](rbwebdev@icloud.com)
+
+* [Linkedin](https://www.linkedin.com/in/ryanboris)
