@@ -18,8 +18,6 @@ You can play the game by visiting the following [link](https://neodynia.github.c
 
 * [jQuery](https://www.jquery.com)
 
-* [Bootstrap 4](https://www.getbootstrap.com)
-
 ## Contributing
 
 Ideas, suggestions, refactoring and constructive criticism are encouraged!
