@@ -1,4 +1,7 @@
-var rows = [83 * 1 - 20, 83 * 2 - 20, 83 * 3 - 20];
+let rows = [83 * 1 - 20, 83 * 2 - 20, 83 * 3 - 20];
+let winCount = 0;
+let playCount = 0;
+let percentScore;
 
 class Enemy {
   constructor(x, y, speed) {
@@ -44,11 +47,23 @@ class Player {
 
   win() {
     alert('win');
+    winCount += 1; 
+    playCount += 1;
+    percentScore = Math.round((winCount / playCount) * 100);
+    $('#td1').html(winCount);
+    $('#td2').html(playCount);
+    $('#td3').html(percentScore + ' %');
+
     this.reset();
   }
 
   lose() {
     alert('OUCHIES');
+    playCount += 1;
+    percentScore = Math.round((winCount / playCount) * 100);
+    $('#td1').html(winCount);
+    $('#td2').html(playCount);
+    $('#td3').html(percentScore + ' %');
     this.reset();
   }
 
@@ -90,6 +105,8 @@ document.addEventListener('keyup', function (e) {
   };
   player.handleInput(allowedKeys[e.keyCode]);
 });
+
+
 
 var allEnemies = [new Enemy(), new Enemy(), new Enemy(), new Enemy()];
 var player = new Player();
