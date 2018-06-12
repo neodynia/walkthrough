@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Eater|Sunflower:300');
+@import url('https://fonts.googleapis.com/css?family=Eater|Righteous|Sunflower:300');
+
+/*General Styles*/
 body {
   text-align: center; 
   max-width: 100%;
   
 }
-
+/* Header and Title Styles*/
 header {
   display: flex;
   flex-flow: row wrap;
@@ -12,21 +16,49 @@ header {
 }
 
 .title-text {
-  font-family: Menlo;
-  font-style: oblique;
-  border: #a00 dotted 5px;
-  color: #fff;
+  font-family: 'Eater', cursive;
+  border: rgb(141, 0, 0) dotted 5px;
+  color: rgb(219, 35, 35);
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 20px 20px rgba(200, 0, 0, 0.1);
-  background-color: rgba(200, 0, 0, 0.5);
+  box-shadow: 20px 10px rgba(200, 0, 0, 0.4);
+  background-color: rgb(7, 255, 61);
 }
 
+/* Media Queries*/
 @media screen and (max-width: 530px) {
   body {
     display: flex;
     flex-flow: column;
     max-height: 420px;
   }
+}
+
+/*Score Table Styles*/
+section {
+  display: block; 
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  margin: 20px; 
+  padding: 10px;
+}
+
+th, 
+tr, 
+td {
+  flex: 1;
+  padding: 10px;
+}
+
+.table-titles {
+  font-family: 'Righteous', cursive;
+}
+#td1, 
+#td2,
+#td3 {
+  border: solid rgb(85, 214, 45);
 }
