@@ -12,7 +12,7 @@ Clone the repo to a local directory and run via your specific local environment 
 
 ### Github Pages Weblink
 
-You can play the game by visiting the following [link](https://neodynia.github.com/frontend-nanodegree-arcade-game).
+You can play the game by visiting the following [link](https://neodynia.github.io/frontend-nanodegree-arcade-game).
 
 ## Dependencies
 
