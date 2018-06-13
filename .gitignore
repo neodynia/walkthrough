@@ -1,8 +1,1 @@
-node_modules/**
 .DS_Store
-gulpfile.js
-sass/**/*.sass 
-*.coffee
-.vscode
-.eslintrc.json
-package.json
